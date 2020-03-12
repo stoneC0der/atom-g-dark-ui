@@ -5,7 +5,7 @@
 // Displays selectable tabs above the editor.
 // Overrides: atom/tabs
 
-.tab-bar {
+atom-workspace-axis .tab-bar {
   background-color: @tab-bar-background-color;
   box-shadow: 15px 2px 10px -5px HSLA(201, 12%, 47%,0.50);
 
@@ -20,9 +20,8 @@
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
-      border-bottom: 2px solid #25bedd;
+      border-left: 2px solid #25bedd;
     }
-
 
     // Modified Icon (the circle) -------------------
     &.modified:not(:hover) .close-icon {
@@ -55,5 +54,11 @@
         visibility: hidden;
       }
     }
+  }
+  .texteditor.tab.active {
+    color: @text-color-selected;
+    background-color: @tab-background-color-active;
+    border: none;
+    border-bottom: 2px solid #25bedd;
   }
 }
