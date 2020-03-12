@@ -1,0 +1,137 @@
+
+// Base
+// -------------------
+
+// Used for global styles
+// Or to override certain Atom core styles
+
+// -------------------
+
+
+body,
+.github-Git {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+  background-color: @base-background-color;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+atom-pane-container atom-pane .item-views .pane-item,
+.settings-view .config-menu {
+    color: @text-color;
+    background-color: @base-background-color;
+}
+
+.settings-view {
+  .config-menu {
+    border-right: 1px solid darken(@base-background-color, 3%);
+    .nav > li.active > a {
+      color: @text-color-selected;
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="text"],
+  select.form-control,
+  select.form-control:hover,
+  select.form-control:focus, {
+    background-color: @base-background-color;
+    border: 1px solid lighten(@base-background-color, 3%);
+  }
+
+  select.form-control {
+    color: lighten(@text-color, 10%);
+  }
+
+  .package-card {
+    &.disabled {
+      background-color: darken(@base-background-color, 2%);
+      box-shadow: 0px 0px 15px -5px darken(@base-background-color, 50%);
+      border: none;
+    }
+
+    background-color: @base-background-color;
+    box-shadow: 0px 0px 15px -5px darken(@base-background-color, 50%);
+    border: none;
+    .package-name {
+      color: lighten(@text-color, 10%);
+    }
+
+    .meta-user .author {
+        color: lighten(@text-color, 20%);
+        margin-left: 10px;
+    }
+
+    &.package-card:hover {
+      background-color: lighten(@base-background-color, 5%);
+    }
+  }
+
+  .sub-section .sub-section-heading {
+    background-color: inherit;
+    color: @text-color
+  }
+
+  .section {
+    border-top: 1px solid darken(@base-background-color, 3%);
+    .section-heading {
+      color: @text-color;
+    }
+  }
+
+  .settings-panel label {
+    color: @text-color;
+  }
+
+  .setting-description {
+    color: lighten(@text-color, 20%);
+  }
+
+  .text {
+    color: darken(@text-color, 10%);
+  }
+}
+.input-select {
+  background-color: @base-background-color;
+  border-color: lighten(@base-background-color, 5%);
+}
+a.icon {
+  color: @text-color;
+}
+
+.atom-dock-resize-handle.left, .atom-dock-resize-handle.right {
+  width: 0px;
+}
+
+.input-checkbox:before, .input-checkbox:after {
+  background-color: @text-color;
+}
+
+.scrollbars-visible-always ::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+
+.scrollbars-visible-always ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: 3px solid @base-background-color;
+    background: #006b9a2f;
+    background-clip: content-box;
+}
+
+.code {
+    color: hsl(48, 100%, 84%);
+}
+
+.atom-dock-toggle-button .atom-dock-toggle-button-inner {
+  background-color: darken(@base-background-color, 3%);
+  border: darken(@base-background-color, 3%);
+  color: @text-color;
+}

@@ -1,0 +1,34 @@
+
+// Status Bar
+// -------------------
+
+// Located at the bottom.
+// Displays information about the current editor.
+// Overrides: atom/status-bar
+
+.status-bar {
+  font-size: @font-size;
+  color: @text-color;
+  border-top: none;
+  background-color: @tree-view-background-color;
+  .grammar-status a,
+  .line-ending-tile,
+  .encoding-status a,
+  .cursor-position a,
+  .selection-count a,
+  .file-info a {
+    color: @text-color;
+  }
+  .grammar-status a:hover,
+  .line-ending-tile,
+  .encoding-status a:hover,
+  .cursor-position a:hover,
+  .selection-count a:hover,
+  .file-info a:hover,
+  button:hover,
+  span:hover,
+  .inline-block:hover {
+    color: darken(@text-color, 10%);
+    text-decoration: none;
+  }
+}
