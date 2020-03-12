@@ -84,6 +84,7 @@ atom-pane-container atom-pane .item-views .pane-item,
     .section-heading {
       color: @text-color;
     }
+
   }
 
   .settings-panel label {
@@ -161,8 +162,13 @@ a.icon {
     &-headerButton:disabled {
       color: darken(@text-color, 15%);
     }
+    &-group.is-focused .is-selected {
+      background-color: darken(@base-background-color, 3%);
+      color: @text-color-selected;
+    }
     &:focus &-group.is-focused .is-selected {
       background-color: darken(@base-background-color, 3%);
+      color: @text-color-selected;
     }
   }
 
