@@ -16,3 +16,8 @@
 
 - Minor improvements
 - Bug Fixed
+
+## 0.2.0
+
+- Minor Improvements
+- Fixed selected item (tree-view & git)
