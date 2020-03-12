@@ -116,7 +116,7 @@ a.icon {
 
 .scrollbars-visible-always ::-webkit-scrollbar {
     width: 15px;
-    height: 10px;
+    height: 0px;
 }
 
 .scrollbars-visible-always ::-webkit-scrollbar-thumb {
@@ -124,6 +124,14 @@ a.icon {
     border: 3px solid @base-background-color;
     background: #006b9a2f;
     background-clip: content-box;
+  &:window-inactive {
+    background-color: darken(@base-background-color, 5%);
+  }
+}
+
+.scrollbars-visible-always ::-webkit-scrollbar-track {
+  // border-radius: 3px;
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 }
 
 .code {
@@ -136,9 +144,46 @@ a.icon {
   color: @text-color;
 }
 
-
 .title-bar {
   background-color: @base-background-color;
   border: none;
   color: @text-color;
+}
+
+.github {
+  &-StagingView {
+    &-header .icon:before {
+      color: @text-color;
+    }
+    &-headerButton:disabled {
+      color: darken(@text-color, 15%);
+    }
+  }
+
+  &-Project .icon {
+    fill: @text-color;
+  }
+
+  &-RecentCommit-time,
+  &-CommitView-remaining-characters {
+    color: darken(@text-color, 20%)
+  }
+  &-Accordion {
+    &[open] &-header,
+    &-header {
+      color: @text-color;
+      border-bottom: 1px solid @base-background-color;
+    }
+    &-content {
+      background-color: inherit;
+      color: lighten(@text-color, 25%);
+      border-bottom: 1px solid @base-background-color;
+    }
+  }
+  &-Project {
+    border-bottom: 1px solid @base-background-color;
+  }
+  &-CreatePullRequestTile-divider {
+    border-color: lighten(@base-background-color, 10%);
+  }
 }
