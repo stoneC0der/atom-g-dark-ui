@@ -158,6 +158,9 @@ a.icon {
     &-headerButton:disabled {
       color: darken(@text-color, 15%);
     }
+    &:focus &-group.is-focused .is-selected {
+      background-color: darken(@base-background-color, 3%);
+    }
   }
 
   &-Project .icon {
