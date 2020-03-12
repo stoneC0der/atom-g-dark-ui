@@ -169,7 +169,9 @@ a.icon {
   &-Project .icon {
     fill: @text-color;
   }
-
+  &-RecentCommits, {
+    border-top: 1px solid @base-border-color;
+  }
   &-RecentCommit-time,
   &-CommitView-remaining-characters {
     color: darken(@text-color, 20%)
@@ -188,6 +190,15 @@ a.icon {
   }
   &-Project {
     border-bottom: 1px solid @base-background-color;
+  }
+  &-CommitView {
+    &-buttonWrapper {
+      border-bottom: 1px solid @base-background-color;
+    }
+    &-editor {
+      border: 1px solid @base-background-color;
+      box-shadow: 0px 0px 15px -5px darken(@base-background-color, 5%);
+    }
   }
   &-CreatePullRequestTile-divider {
     border-color: lighten(@base-background-color, 10%);
