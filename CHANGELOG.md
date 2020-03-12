@@ -11,3 +11,8 @@
 - Fixed less variable to match php variable
 
 - Minor improvements
+
+## 0.2.0
+
+- Minor improvements
+- Bug Fixed
