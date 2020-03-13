@@ -17,7 +17,8 @@
 
   &-resize-handle {
     &-resizable.left,
-    &-resizable.right {
+    &-resizable.right,
+    &-resizable.top {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -25,6 +26,10 @@
       cursor: col-resize;
       z-index: 11;
       background-color: transparent;
+    }
+    &-resizable.bottom {
+      background-color: lighten(@base-background-color, 5%);
+      height: 1px;
     }
   }
 }
