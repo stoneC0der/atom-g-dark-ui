@@ -15,6 +15,10 @@ body,
   background-color: @app-background-color;
 }
 
+code {
+    color: hsl(48, 100%, 84%);
+}
+
 atom-pane {
   border-right: 1px solid @base-border-color;
   background-color: @base-background-color;
@@ -34,6 +38,9 @@ atom-pane-container atom-pane .item-views .pane-item,
     border-right: 1px solid darken(@base-background-color, 3%);
     .nav > li.active > a {
       color: @text-color-selected;
+    }
+    .nav > li > a:hover {
+      color: lighten(@text-color-selected, 10%);
     }
   }
 
@@ -136,10 +143,6 @@ a.icon {
 .scrollbars-visible-always ::-webkit-scrollbar-track {
   // border-radius: 3px;
   // box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-}
-
-.code {
-    color: hsl(48, 100%, 84%);
 }
 
 .atom-dock-toggle-button .atom-dock-toggle-button-inner {
