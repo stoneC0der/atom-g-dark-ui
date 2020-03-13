@@ -25,11 +25,19 @@ button, input, optgroup, select, textarea {
   &.selected {
     color: @text-color-selected;
     background-color: @button-background-color-selected;
+    &:hover {
+      background-color: lighten(@button-background-color-selected, 90%);
+      color: @text-color;
+    }
   }
   &:focus,
   &:focus:active {
     outline: none;
   }
+}
+
+.input-toggle:before {
+  background-color: @base-background-color;
 }
 
 
