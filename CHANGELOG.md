@@ -27,3 +27,7 @@
 - Minor improvements
 - Fixed lists & suggestion
 - Fixed status bar where some options a not visible
+
+## 0.3.0
+* Bug fixed
+* Minor improvements
