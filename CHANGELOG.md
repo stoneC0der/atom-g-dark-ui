@@ -21,3 +21,9 @@
 
 - Minor Improvements
 - Fixed selected item (tree-view & git)
+
+## 0.2.1
+
+- Minor improvements
+- Fixed lists & suggestion
+- Fixed status bar where some options a not visible
