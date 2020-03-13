@@ -5,7 +5,8 @@
   "description": "UI for G-dark-theme",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "g-dark-syntax"
   ],
   "repository": "https://github.com/stoneC0der/atom-g-dark-ui",
   "license": "MIT",
