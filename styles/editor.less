@@ -24,6 +24,17 @@ atom-text-editor[mini] {
 }
 
 .settings-view {
+  .sub-section .sub-section-heading {
+    background-color: @app-background-color;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    color: @text-color
+  }
+  .section-heading {
+    &-count.badge.badge-flexible {
+      color: @text-color;
+    }
+  }
   .alert-info {
       color: #d1e0f1;
       border-color: #45688075;
