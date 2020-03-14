@@ -12,6 +12,7 @@
 
     // We want to highlight the background of the list items because we dont know their size.
     &.selected {
+
       color: @text-color-selected;
       background-color: @background-color-selected;
       &:before{ display: none; }
@@ -39,6 +40,9 @@
   }
   .status {
     float: right;
+  }
+  ol.list-group li {
+    border-radius: 4px;
   }
 }
 
@@ -104,4 +108,23 @@
   .vertical-menu a:hover, .vertical-menu label:hover {
     background-color: darken(@base-background-color, 5%);
   }
+}
+
+.command-palette {
+  .list-group {
+    .character-match {
+      color: @text-color;
+      font-weight: bold;
+    }
+  }
+}
+
+.key-binding {
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0 5px;
+    border-radius: 4px;
+    color: lighten(@text-color, 5%);
+    font-weight: 700;
+    background-color: @background-color-selected;
 }
