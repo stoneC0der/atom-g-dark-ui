@@ -73,4 +73,16 @@
   &-FilePatchView-message {
     color: @text-color;
   }
+  &-StatusBarTileController {
+    &-tooltipMenu {
+      .tooltip-inner {
+        &.tooltip-inner {
+          background-color: lighten(@base-background-color, 5%);
+          opacity: 0.8;
+          border: 1px solid lighten(@base-border-color, 5%);
+          box-sizing: 0xp 0xp 15px -5px lighten(@base-background-color, 20%);
+        }
+      }
+    }
+  }
 }
