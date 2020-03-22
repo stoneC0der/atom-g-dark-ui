@@ -39,7 +39,9 @@
       display: inline;;
     }
   }
-
+  &-right .inline-block {
+    color: @text-color;
+  }
 }
 
 .sb-table.linter {
@@ -85,5 +87,16 @@ input.input-radio, input.input-checkbox, input.input-toggle {
   }
   &-checkbox-label, &-toggle-label, &-toggle-label input {
     color: lighten(@text-color, 20%);
+  }
+}
+
+.php-debug-debug-view-toggle, .php-debug-console-view-toggle{
+  background-color: lighten(@base-background-color, 1%);
+  border: 1px solid lighten(@base-border-color, 2%);
+  border-radius: 4px;
+  color: @text-color;
+  &:hover {
+    background-color: lighten(@base-background-color, 3%);
+    border: 1px solid lighten(@base-border-color, 10%);
   }
 }
